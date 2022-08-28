@@ -9,15 +9,11 @@ public class Employee {
 	public Employee() {
 	}
 	
-	
-
 	public Employee(String firstName, String lastName) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-
-
 
 	public int getId() {
 		return id;

@@ -1,5 +1,6 @@
 package com.pxp.employeedatabase.service;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +40,7 @@ public class EmployeeService {
 				employeeRepository.save(employee);
 				return "Employee added successfully";
 			}else {
-				return "This employee already exists in the database.";
+				return "Cet employé existe déjà dans la base de données.";
 			}
 		}catch (Exception e) {
 			throw e;
@@ -52,7 +53,7 @@ public class EmployeeService {
 				employeeRepository.delete(employee);
 				return "Employee deleted successfully.";
 			} else {
-				return "Employee does not exist.";
+				return "L'employé n'existe pas.";
 			}
 		}catch (Exception e) {
 			throw e;
@@ -65,7 +66,7 @@ public class EmployeeService {
 				employeeRepository.save(employee);
 				return "Employee updated successfully.";
 			} else {
-				return "Employee does not exist.";
+				return "L'employé n'existe pas.";
 			}
 		}catch (Exception e) {
 			throw e;
